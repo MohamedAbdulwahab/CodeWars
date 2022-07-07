@@ -1,4 +1,4 @@
 # CodeWars Challenges
 
-## I have created this repository to track my solutions to CodeWars challenes. Feel free to look through my solutions if you believe they are helpful. 
+This repository contains my solutions to CodeWars challenges.\n Feel free to look through my solutions or use them as a guidance if you believe they are helpful. 
 

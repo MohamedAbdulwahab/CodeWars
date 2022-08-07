@@ -39,6 +39,6 @@ function meeting(s) {
 	  guestList.push(`(${lastName[i].toUpperCase()}, ${firstName[i].toUpperCase()})`)
 	}
   
-	// sort the guessList array based on last name, turn it into a string, and return it as a string.
+	// sort the guessList array based on last name, turn it into a string, and return it.
 	return guestList.sort().join('');
 }

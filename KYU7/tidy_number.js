@@ -35,11 +35,11 @@ The number's digits {2 , 3, 3, 5} are in non-Decreasing Order , Note 3 <= 3
 function tidyNumber(n) {
 	const str = String(n);
   
-	for(let i = 0; i < str.length; i++) {
+	for(let i = 0; i < str.length - 1; i++) {
 	  if(Number(str[i] > Number(str[i+1]))) {
 		return false;
 	  }
 	}
   
 	return true;
-}
+  }

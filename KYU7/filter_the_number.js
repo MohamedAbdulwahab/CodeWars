@@ -10,12 +10,12 @@ Details:
 You will be given a string of numbers and letters mixed up, you have to return all the numbers in that string in the order they occur.
 */
 
-// solution 1: 
+// solution 1: regular expressions.
 var filterString = function(value) {
 	return Number(value.match(/\d/ig).join(''));
 }
 
-// solution 2: 
+// solution 2: filter method.
 var filterString = function(value) {
 	return Number(Array.from(value).filter((e) => !isNaN(e)).join(''));
 }

@@ -8,9 +8,12 @@ You're running out of screen real estate, and on some pages you want to display 
 - Assume shortenToDate's input will always be a string, e.g. "Friday May 2, 7pm". Assume shortenToDate's output will be the shortened string, e.g., "Friday May 2".
 */
 
-// solution
+// solution 1:
 function shortenToDate(longDate) {
 	const indexOfComma = longDate.indexOf(',');
   
 	return longDate.slice(0, indexOfComma);
 }
+
+// solution 2:
+shortenToDate = (longDate) => longDate.slice(0, longDate.indexOf(','));

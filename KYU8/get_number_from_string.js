@@ -6,7 +6,7 @@ Function:
 getNumberFromString(s)
 */
 
-// solution
+// solution 1: using a regular for loop.
 function getNumberFromString(s) {
 	const numArr = [];
   
@@ -17,4 +17,9 @@ function getNumberFromString(s) {
 	}
   
 	return Number(numArr.join(''));
+}
+
+// solution 2: using regular expressions (regex).
+function getNumberFromString(s) {
+	return Number(s.replace(/\D/ig, ''));
 }

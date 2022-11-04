@@ -14,23 +14,3 @@ const orderedCount = (text) => {
 	return arr.map(el => [el, [...text].filter(e => e === el).length]);
 }
 
-// solution 2: 
-const orderedCount = function (text) {
-	const counter = {};
-	const list = [];
-	
-	for(let i = 0; i < text.length; i++) {
-	  if(!counter.hasOwnProperty([text[i]])) {
-		counter[text[i]] = 1;
-	  } else {
-		counter[text[i]]++;
-	  }
-	}
-  
-	for(const property in counter) {
-	  list.push([property, counter[property]]);
-	}
-	
-  
-	return list;
-}

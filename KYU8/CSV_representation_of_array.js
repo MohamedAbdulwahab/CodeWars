@@ -18,7 +18,7 @@ output:
 Note: Array's length > 2.
 */
 
-// solution 1: 
+// solution 1: using raw for loops.
 function toCsvText(arr) {
 	let str = '';
   
@@ -36,5 +36,5 @@ function toCsvText(arr) {
 	return str.slice(0, str.length - 1);
 }
 
-// solution 2: 
+// solution 2: using the join() array method. 
 const toCsvText = (arr) => arr.join('\n');
